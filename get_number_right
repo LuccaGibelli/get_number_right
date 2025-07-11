@@ -1,0 +1,18 @@
+import random
+
+num_aleatorio = random.randint(1,10)
+palpite = 0
+
+print('Adivinhe o número')
+
+while palpite != num_aleatorio:
+    palpite = int(input("Qual o seu palpite?   "))
+
+    if palpite < num_aleatorio:
+        print('Tente um número maior')
+
+    elif palpite > num_aleatorio:
+        print('Tente um número menor')
+
+    else:
+        print('Você acertou')
